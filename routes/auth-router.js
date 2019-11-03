@@ -12,12 +12,11 @@ router.get('/logout', (req, res) => {
 	res.send('LOGGING OUT');
 });
 
-//auth with github
+//authenticate with github
 router.get(
 	'/github',
 	passport.authenticate('github', {
 		scope: [ 'profile' ]
-
 		//handle with passport.js
 	})
 );
