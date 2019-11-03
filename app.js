@@ -1,9 +1,14 @@
 const express = require('express');
+const authRoutes = require('./routes/auth-router');
+const   = require('./config/passport-setup');
 
 const app = express();
 
 // setup the view engine
 app.set('view engine', 'ejs');
+
+// set up routes
+app.use('/auth', authRoutes);
 
 // create home route
 app.get('/', (req, res) => {

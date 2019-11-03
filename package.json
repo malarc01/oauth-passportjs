@@ -18,6 +18,8 @@
   "homepage": "https://github.com/malarc01/oauth-passportjs#readme",
   "dependencies": {
     "ejs": "^2.7.1",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "passport": "^0.4.0",
+    "passport-github2": "^0.1.11"
   }
 }

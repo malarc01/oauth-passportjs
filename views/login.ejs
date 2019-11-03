@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>OAuth</title>
+    <title>Login</title>
     <style>
-    body{
+         body{
         font-family: Arial, Helvetica, sans-serif;
         margin: 0;
     }
@@ -24,11 +24,10 @@
         display: inline-block;
         margin: 0 10px 0 0 ;
     }
-    nav a {
+    nav a{
         color: #fff;
         font-size: 18px;
-        background: rgba(255, 255, 255, .2);
-        /* background: pink; */
+        background: rgba(255, 255, 255, 0.2);
         text-decoration: none;
         padding: 10px;
         display: block;
@@ -37,25 +36,39 @@
         max-width: 960px;
         margin:30px auto;
         padding: 0 10px;
-        color: #333;
+        color:#333;
+    }
+    .github-btn{
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+        padding: 10px;
+        background: #ff5353;
+
     }
     
     </style>
 </head>
+
 <body>
-    <nav>
-        <ul>
-                <li><a href='/auth/logout'>Log Out</a></li>
-                <li><a href='/auth/login'>Log In</a></li>
-                <li><a href='/'>Homepage</a></li>
-        </ul>
-    </nav>
-    <header>
-        <h1>Start of OAuth </h1>
-        <h2>Homepage</h2>
-    </header>
-    <main>
-        <p>Learning the OAuth</p>
-    </main>
+<nav>
+    <ul>
+        <li><a href='/auth/logout'>Log Out</a></li>
+        <li><a href='/auth/login'>Log In</a></li>
+        <li><a href='/'>Homepage</a></li>
+
+    </ul>
+</nav>
+<header>
+    <h1>Login using...</h1>
+</header>
+<main>
+    <a class="github-btn" href="/auth/github">Github</a>
+</main>
+
+
+    
+
+
 </body>
 </html>
